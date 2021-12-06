@@ -15,12 +15,8 @@ function all_eq($lst){
         $number = $maxLength-mb_strlen($keyword);
         $keywords[$index] = $keyword.str_repeat("_", $number);
     }
-
-    foreach ($keywords as $keyword){
-        echo "'".$keyword."',";
-    }
-
+    return $keywords
 }
 
 $str = ['a', 'aa', 'aaa', 'aaaa', 'aaaaa'];
-all_eq($str);
+echo all_eq($str);

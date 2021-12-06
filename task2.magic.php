@@ -13,4 +13,4 @@ function magic(){
     }
 }
 
-magic();
+echo magic();
